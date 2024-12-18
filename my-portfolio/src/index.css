@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Jaro";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #1F2937; */
+  background-color: #0a192f;
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the background static while content scrolls */
+  background-size: auto; /* Ensures the image covers the full window area */
+  background-size: contain; /* Scales the image to fit the window proportionally */
+  overflow-y: auto; /* Scrollable content if it exceeds max height */
+
+
+}
+/* Add consistent styling for the main container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px; /* Moves everything down slightly */
+    /* For footer*/ 
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+/* Main content adjustment for spacing */
+main {
+  width: 100%;
+  margin-top: 100px; /* Default margin, overridden dynamically */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width/height calculations */
+
+    /* For footer*/ 
+  flex: 1; /* This makes the main section grow and push the footer down */
+
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Tailwind styles for sections */
+.section-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensure items wrap to the next row if needed */
+  justify-content: center; /* Center items horizontally */
+  align-items: stretch; /* Ensure boxes have equal height */
+  padding: 20px; /* Add spacing inside the container */
+  gap: 20px; /* Space between boxes */
+  border-radius: 10px; /* Optional rounded corners */
+  width: 100%; /* Make the container stretch across the screen */
+  box-sizing: border-box; /* Include padding in the width calculation */
+
+}
+
+.box {
+  display:flex;
+  flex-direction: column;
+  /* background-color: rgba(251, 248, 240, 0.8); Semi-transparent white */
+  background-color:#112240 ;
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Optional border for visibility */
+  border-radius: 10px; /* Rounded corners */
+  width: 400px; /* Set a fixed width */
+  max-width: 90%; /* Ensure it fits on smaller screens */
+  padding: 20px; /* Space inside the box */
+  text-align: left; /* Center content inside the box */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.about-box {
+  width: 650px; /* New width for the About Me box */
+  max-width: 95%; /* Ensure responsiveness */
+}
+
+
+.box:hover {
+  transform: translateY(-5px); /* Moves the box up slightly on hover */
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /*color: #111827;  Dark gray text */
+  color: #ccd6f6;
+}
+
+.overview {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  /*color: #4B5563;  Medium gray text */
+  color: #a8b2d1; 
+}
+
+.detail-button {
+  /*background-color: #1b6a78; /* Blue background */
+  background-color: #0a192f; 
+  color: white;
+  color: #a8b2d1; /* Light Slate */
+  border-color: #8892b0;
+  /* border: none; */
+  border: 2px solid #a8b2d1; /* Light Slate */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  align-self: center; /* Centers the button horizontally */
+}
+
+.detail-button:hover {
+  /*background-color: #144b55; /* Darker blue on hover */
+  background-color: #1F2937; 
+  color: #64ffda; /* Green */
+  border-color: #64ffda; /* Green */
+
+}
+/* Blurring the background content */
+.modal-overlay {
+  backdrop-filter: blur(5px); /* Apply blur effect to the background when modal is active */
+}
+
+
+body.overflow-hidden {
+  overflow: hidden;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-height: 70px;
+  padding: 15px;
+  text-align: center;
+  background-color: #0a192f; /* Darker navy for contrast */
+  color: #a8b2d1; /* Light Slate */
+  font-family: 'Source Code Pro', monospace; /* Monospace font for credit text */
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+footer a {
+  color: #64ffda; /* Accent Green */
+  text-decoration: none;
+  padding: 5px;
+  transition: color 0.3s ease;
+
+}
+
+footer a:hover {
+  color: #a8b2d1; /* Light Slate */
+}
+
+footer .credit {
+  margin-top: 10px;
+}
+
+
+
+/* In your global CSS file */
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+
+/* .header-wrapper {
+  width: 80%;
+  position: relative;
+  z-index: 1;
+  display: block; /* or flex without justify-center 
+} */
