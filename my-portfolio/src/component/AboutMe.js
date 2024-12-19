@@ -21,7 +21,7 @@ const AboutMe = () => {
           <span className="font-bold text-green">
             minor in Computer Science
           </span>{" "}
-          at the University of Columbia.
+          at the University of British Columbia.
         </p>
 
         <p className="mb-4">
@@ -177,7 +177,7 @@ const AboutMe = () => {
             <FaGithub />
           </a>
           <a
-            href="venus21121@gmail.com"
+            href="mailto: venus21121@gmail.com"
             className="text-red-600 hover:text-red-800"
           >
             <FaEnvelope />

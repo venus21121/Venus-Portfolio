@@ -42,8 +42,8 @@ const Projects = () => {
       overview:
         "A 2D survival game featuring space exploration, dynamic enemies, and a rich storyline.",
       accomplishments: [
-        "Developed as part of a team of 6, contributed to the implementation of core gameplay mechanics and graphics rendering.",
-        "Designed the A pathfinding algorithm* for dynamic enemy navigation and mob behaviors.",
+        "Led a team of 6 in developing core gameplay mechanics and graphics rendering for a 2D survival game,",
+        "Designed the A* pathfinding algorithm for dynamic enemy navigation and mob behaviors.",
         "Developed a fog-of-war system to add challenge and depth to exploration.",
         "Built sprite sheet rendering for smooth character animations.",
         "Optimized memory management and rendering techniques to ensure stable game performance.",
