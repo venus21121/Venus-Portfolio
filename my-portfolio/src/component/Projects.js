@@ -24,6 +24,19 @@ const Projects = () => {
       gif: amaSave,
     },
     {
+      title: "MunchMate - Mobile Food Search App",
+      overview:
+        "A mobile app that helps users discover dining options based on location and preferences. ",
+      accomplishments: [
+        "Developed during a hackathon as part of a team of three, I contributed to building the backend API, integrating Google Places API, and designing a responsive frontend.",
+        "Developed a dynamic preference questionnaire to tailor recommendations based on user input.",
+        "Integrated location-based search for nearby dining options with clickable results for easy navigation.",
+        "Built a sleek, responsive UI using React and Tailwind CSS for smooth user experience.",
+      ],
+      languages: ["Node.js", "Express.js", "React", "Tailwind CSS"],
+      gif: munchMateGif,
+    },
+    {
       title: "Favorite Movies Website",
       overview:
         "A personalized movie collection platform that allows users to manage their favorite movies and get tailored recommendations.",
@@ -51,19 +64,6 @@ const Projects = () => {
       languages: ["C++", "OpenGL"],
 
       gif: strandedGif,
-    },
-    {
-      title: "MunchMate - Mobile Food Search App",
-      overview:
-        "A mobile app that helps users discover dining options based on location and preferences. ",
-      accomplishments: [
-        "Developed during a hackathon as part of a team of three, I contributed to building the backend API, integrating Google Places API, and designing a responsive frontend.",
-        "Developed a dynamic preference questionnaire to tailor recommendations based on user input.",
-        "Integrated location-based search for nearby dining options with clickable results for easy navigation.",
-        "Built a sleek, responsive UI using React and Tailwind CSS for smooth user experience.",
-      ],
-      languages: ["Node.js", "Express.js", "React", "Tailwind CSS"],
-      gif: munchMateGif,
     },
     {
       title: "Task Organizer",
