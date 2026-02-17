@@ -13,23 +13,30 @@ function Experiences() {
       title: "Zomi",
       logo: zomiLogo,
       overview: "Software Engineer ",
-      role: "As a full-stack engineer at Zomi, I designed, developed, and shipped multiple high-impact features across both the frontend (React Native) and backend (Flask + PostgreSQL). My work focused on improving user engagement through performant UI, seamless social interactions, and scalable backend architecture. I collaborated cross-functionally with product, design, and backend teams to ensure each release met both UX and technical performance goals.",
+      role: "As a full-stack engineer at Zomi, I architected and shipped core features across the React Native mobile app and Flask/PostgreSQL backend. I led the development of high-performance social ecosystems and real-time commerce tools, focusing on bridging complex client-side state with scalable infrastructure. By collaborating cross-functionally, I ensured that every release balanced premium UX with robust technical stability.",
       challenges: [
         {
-          challenge:
-            "As Zomi’s social platform grew, it required combining complex media and social features between the mobile app and backend systems, without sacrificing speed or stability.",
-          solution:
-            "I built a streamlined connection between the React Native mobile app and the Flask + PostgreSQL backend. This included optimizing how data and media were fetched, displayed, and uploaded to AWS S3, ensuring videos and posts loaded quickly and reliably. I also implemented Universal Links for referrals and social connections, allowing users to share content and invite users to join the app seamlessly. These improvements made the app smoother, more engaging, and more enjoyable to use during the beta release.",
+          challenge: "Building a reliable, multi-step media publishing flow with complex client-side states.",
+          solution: "Led the client-side implementation of the media publishing pipeline using Redux. I engineered a robust state machine to manage local file URI persistence, asynchronous upload progress to AWS S3, and error recovery, ensuring a seamless experience even during network interruptions."
         },
+        {
+          challenge: "Integrating real-time, OS-level order tracking into a cross-platform mobile environment.",
+          solution: "Developed a custom TypeScript ↔ Swift/Objective-C bridge to enable iOS Live Activities. I synchronized these native notifications with a centralized Redux store to provide real-time updates that stayed perfectly in sync with backend order states."
+        },
+        {
+          challenge: "Scaling app adoption and maintaining performance during rapid user growth and platform-wide traffic shifts.",
+          solution: "Implemented deep-linked order flows and Universal Link referrals for an 80-store rollout, successfully doubling inbound app traffic (2x+). Simultaneously, I engineered an infinite video feed using viewport-based rendering to eliminate scroll jank and reduce time-to-first-frame."
+        }
       ],
       accomplishments: [
-        "Delivered core social and content features (onboarding, PDP, Search, Posting, Friendship) that became pillars of Zomi’s mobile experience.",
-        "Designed and implemented the Social Friendship and Referral backend with PostgreSQL schema, Flask APIs, and Universal Link integration.",
-        "Built robust media upload and publishing workflows, achieving near-perfect reliability during beta testing.",
-        "Partnered with design to refine UI/UX and performance, improving perceived responsiveness and retention.",
-        "Contributed to the successful beta launch of Zomi’s social features, driving early adoption among test users."
+        "Architected Zomi’s end-to-end social ecosystem including PostgreSQL schema design, Flask REST APIs, and AWS deployment.",
+        "Successfully scaled inbound traffic by 2x+ through deep-link integrations, offsetting industry-wide iOS traffic declines.",
+        "Standardized API contracts via a BFF (Backend-for-Frontend) architecture, optimizing data delivery for Product Detail Pages (PDP).",
+        "Developed a custom React Native native bridge to support iOS Live Activities for real-time order tracking.",
+        "Implemented cross-platform event tracking (Mobile + H5) to ensure data consistency for product analytics and attribution.",
+        "Contributed to the successful production rollout across 80+ stores, maintaining high reliability and performance."
       ],
-      date: "Nov. 2024 – Present",
+      date: "Mar. 2025 – Present",
     },
     {
       title: "Acer",
