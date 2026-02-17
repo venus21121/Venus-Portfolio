@@ -10,37 +10,34 @@ const AboutMe = () => {
   const sections = {
     description: (
       <div className="overview mt-2 text-lg leading-relaxed max-w-3xl mx-auto">
-       <p className="mb-4">
-  Hello! My name is Venus, and I’m a passionate developer who loves building
-  products that blend creativity and technology. I hold a{" "}
-  <span className="font-bold text-green">
-    Bachelor of Science in Mathematics
-  </span>{" "}
-  with a{" "}
-  <span className="font-bold text-green">Minor in Computer Science</span> from
-  the University of British Columbia.
-</p>
-
-<p className="mb-4">
-  My journey began with an internship at
-  <span className="font-semibold text-green"> Acer</span>, where I developed{" "}
-  <span className="italic">machine learning models</span> for medical
-  applications. More recently, I worked as a{" "}
-  <span className="font-semibold text-green">Software Engineer at Zomi</span>,
-  a social food discovery startup, where I built and shipped core mobile and
-  backend features that power the app’s social and content experiences.
-</p>
-
-<p className="mb-4">
-  I enjoy tackling challenging problems, learning new technologies, and
-  collaborating with cross-functional teams to bring ideas to life. Outside of
-  work, I love hiking, working out, and exploring new design and tech trends
-  that inspire my next project.
-</p>
-
-<p>
-  I’m always excited to connect with others who share a passion for building impactful, user-centered products — so feel free to reach out!
-</p>
+        <p className="mb-4">
+          Hello! My name is Venus, and I’m a passionate developer who loves building
+          products that blend creativity and technology. I hold a{" "}
+          <span className="font-bold text-green">
+            Bachelor of Science in Mathematics
+          </span>{" "}
+          with a{" "}
+          <span className="font-bold text-green">Minor in Computer Science</span> from
+          the University of British Columbia.
+        </p>
+        <p className="mb-4">
+          My journey began with an internship at
+          <span className="font-semibold text-green"> Acer</span>, where I developed{" "}
+          <span className="italic">machine learning models</span> for medical
+          applications. More recently, I worked as a{" "}
+          <span className="font-semibold text-green">Software Engineer at Zomi</span>,
+          a social food discovery startup, where I built and shipped core mobile and
+          backend features that power the app’s social and content experiences.
+        </p>
+        <p className="mb-4">
+          I enjoy tackling challenging problems, learning new technologies, and
+          collaborating with cross-functional teams to bring ideas to life. Outside of
+          work, I love hiking, working out, and exploring new design and tech trends
+          that inspire my next project.
+        </p>
+        <p>
+          I’m always excited to connect with others who share a passion for building impactful, user-centered products — so feel free to reach out!
+        </p>
       </div>
     ),
     education: (
