@@ -99,7 +99,7 @@ const App = () => {
             >
               {section === "Projects" && <Projects />}
               {section === "Experiences" && <Experiences />}
-              {section === "AboutMe" && <AboutMe />}
+              {section === "About Me" && <AboutMe />}
             </motion.div>
           )}
         </main>

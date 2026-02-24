@@ -27,7 +27,7 @@ const Header = forwardRef(
           {...props}
           className="header-container grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-6 p-4 sm:p-6 lg:p-8 text-white mx-auto justify-items-center max-w-screen-xl"
         >
-          {["Projects", "Experiences", "AboutMe"].map((section) => (
+          {["Projects", "Experiences", "About Me"].map((section) => (
             <button
               key={section}
               className={`hover:bg-lightNavy px-4 py-2 rounded ${
