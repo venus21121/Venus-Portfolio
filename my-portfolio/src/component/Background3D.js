@@ -232,7 +232,6 @@ const Background3D = ({ headerPosition }) => {
     camera.position.z = 20;
 
     // Reusable vectors for surface attachment (avoid per-frame allocations)
-    const localPoint = new THREE.Vector3();
     const worldNormal = new THREE.Vector3();
     const CUBE_UP = new THREE.Vector3(0, 1, 0);
     const localDir = new THREE.Vector3(); // for world→lat/lon when locking to surface
@@ -287,7 +286,9 @@ const Background3D = ({ headerPosition }) => {
       const blend = 1 - Math.exp(-VELOCITY_SMOOTH * dt);
       moveVelX += (targetVelX * moveSpeed - moveVelX) * blend;
       moveVelY += (targetVelY * moveSpeed - moveVelY) * blend;
-      pos.addScaledVector(tangentRight, moveVelX * dt).addScaledVector(tangentUp, moveVelY * dt);
+      pos
+        .addScaledVector(tangentRight, moveVelX * dt)
+        .addScaledVector(tangentUp, moveVelY * dt);
       // Step 3: Snap back to sphere surface (no pole restriction)
       pos.normalize().multiplyScalar(sphereRadius + SNAP_OFFSET);
       // Step 4: Surface normal first (local Up = vector from sphere center to player), then yaw to face movement
@@ -382,7 +383,10 @@ const Background3D = ({ headerPosition }) => {
         tumbleAxis.crossVectors(fallVelocity, WORLD_UP);
         if (tumbleAxis.lengthSq() < 0.01) tumbleAxis.set(1, 0, 0);
         tumbleAxis.normalize();
-        const tumbleSpeed = Math.min(FALL_TUMBLE_MAX, fallTime * FALL_TUMBLE_ACCEL);
+        const tumbleSpeed = Math.min(
+          FALL_TUMBLE_MAX,
+          fallTime * FALL_TUMBLE_ACCEL,
+        );
         playerGroup.rotateOnWorldAxis(tumbleAxis, tumbleSpeed * dt);
         // Off-screen: behind camera or below view
         const offScreen =
